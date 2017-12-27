@@ -234,7 +234,8 @@ bindsym $mod+Ctrl+Right exec playerctl next
 bindsym $mod+Ctrl+Left exec playerctl previous
 
 #Launch Programs on startup
-exec --nostartup-id telegram
-exec --nostartup-id spotify
-exec --nostartup-id exec nm-applet
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+#exec $HOME/Scripts/ProgramLaunchers/telegram.sh
+exec --no-startup-id telegram
+exec --no-startup-id spotify
+exec --no-startup-id exec nm-applet

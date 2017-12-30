@@ -1,5 +1,5 @@
-!URxvt.font: xft:Ubuntu Mono derivative Powerline:pixelsize=16
-URxvt.font: xft:iosevka-regular:size=13
+URxvt.font: xft:DejaVu Sans Mono for Powerline:size = 13
+!URxvt.font: xft:iosevka-regular:size=13
 
 URxvt.scrollBar: false
 

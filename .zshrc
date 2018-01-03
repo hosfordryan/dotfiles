@@ -8,7 +8,7 @@
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="agnoster"
-
+export TERM="xterm-256color"
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
 # cause zsh load theme from this variable instead of
@@ -59,7 +59,7 @@ ZSH_THEME="agnoster"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git colored-man-pages command-not-found zsh-autosuggestions
+  git colored-man-pages command-not-found zsh-autosuggestions zsh-256color
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -93,11 +93,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Powerline
-if [[ -r /usr/share/powerline/bindings/zsh/powerline.zsh ]]; then
-    source /usr/share/powerline/bindings/zsh/powerline.zsh
-fi
-
+#AUTOSUGGESTION_HIGHLIGHT_COLOR='fg=250'
 
 #function to commit and push git in one command
 function lazygit(){
@@ -105,4 +101,4 @@ function lazygit(){
     git push
 }
 
-cat ~/.cache/wal/sequences
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=3"

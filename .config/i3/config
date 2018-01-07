@@ -129,21 +129,33 @@ bindsym $mod+a focus parent
 
 #Define Workspace Variables
 #Monitor Varibles:
-set $mainMonitor "DisplayPort-1"
-set $leftMonitor "HDMI-0"
-set $rightMonitor "DVI-0"
-set $tv "DisplayPort-0"
+set $mainMonitor DisplayPort-1
+set $leftMonitor HDMI-0
+set $rightMonitor DVI-0
+set $tv DisplayPort-0
 #
-set $workspace1 "1" output $mainMonitor
-set $workspace2 "2" output $mainMonitor
-set $workspace3 "3" output $mainMonitor
-set $workspace4 "4" output $leftMonitor
-set $workspace5 "5" output $leftMonitor
-set $workspace6 "6" output $leftMonitor
-set $workspace7 "7" output $rightMonitor
-set $workspace8 "8" output $rightMonitor
-set $workspace9 "9" output $rightMonitor
-set $workspace10 "10" output $tv
+set $workspace1 "1"
+set $workspace2 "2"
+set $workspace3 "3"
+set $workspace4 "4"
+set $workspace5 "5"
+set $workspace6 "6"
+set $workspace7 "7" 
+set $workspace8 "8"
+set $workspace9 "9"
+set $workspace10 "10"
+
+#Bind workspaces to monitors
+workspace $workspace1 output $mainMonitor
+workspace $workspace2 output $mainMonitor
+workspace $workspace3 output $mainMonitor
+workspace $workspace4 output $leftMonitor
+workspace $workspace5 output $leftMonitor
+workspace $workspace6 output $leftMonitor
+workspace $workspace7 output $rightMonitor
+workspace $workspace8 output $rightMonitor
+workspace $workspace9 output $rightMonitor
+workspace $workspace10 output $tv
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1

@@ -236,3 +236,4 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id telegram
 exec --no-startup-id spotify
 exec --no-startup-id exec nm-applet
+exec --no-startup-id $HOME/Scripts/Monitors.sh

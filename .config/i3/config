@@ -45,7 +45,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 
 
 #Set Wallpaper
-exec --no-startup-id nitrogen
+exec --no-startup-id nitrogen --restore
 #For Random Wallpaper from folder, use:
 #exec --no-startup-id feh --randomize --bg-fill ~/Pictures/Wallpapers.*
 

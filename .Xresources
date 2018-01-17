@@ -90,15 +90,6 @@ rofi.color-normal: #1D1C25, #807A86, #1D1C25, #923D3D, #1D1C25
 rofi.color-active: #1D1C25, #807A86, #1D1C25, #923D3D, #1D1C25
 rofi.color-urgent: #1D1C25, #605F67, #1D1C25, #605F67, #807A86
 
-! Xclock colors.
-XClock*foreground: #807A86
-XClock*background: #1D1C25
-XClock*majorColor:  rgba:80/7a/86/ff
-XClock*minorColor:  rgba:80/7a/86/ff
-XClock*hourColor:   rgba:80/7a/86/ff
-XClock*minuteColor: rgba:80/7a/86/ff
-XClock*secondColor: rgba:80/7a/86/ff
-
 ! Set depth to make transparency work.
 URxvt*depth: 32
 

@@ -32,6 +32,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdtree'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -48,3 +49,8 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 "
 let g:ycm_global_ycm_extra_conf = ".vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
+
+" Mappings:
+
+" Open NERDTree
+map <C-n> :NERDTreeToggle<CR>

@@ -102,3 +102,4 @@ function lazygit(){
 }
 
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=3"
+export EDITOR=vim

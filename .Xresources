@@ -6,7 +6,7 @@ URxvt.scrollBar: false
 ! XTerm*background: #272822
 
 ! font
-URxvt*font: xft:iosevka-regular:size=13:antialias=true:hinting=true
+URxvt*font: xft:iosevka-regular:size=13
 
 ! DroidSansMono Nerd Font
 URxvt.letterSpace: -1

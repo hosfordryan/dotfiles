@@ -254,7 +254,7 @@ bindsym $mod+Ctrl+Right exec playerctl next
 bindsym $mod+Ctrl+Left exec playerctl previous
 
 #Shortcuts to launch Programs
-bindsym $mod+Ctrl+e exec urxvt -e ranger
+bindsym $mod+Ctrl+e exec urxvt -depth -0 -e ranger
 #Launch Programs on startup
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 #exec $HOME/Scripts/ProgramLaunchers/telegram.sh

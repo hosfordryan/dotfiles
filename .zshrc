@@ -104,3 +104,5 @@ function lazygit(){
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=3"
 export EDITOR=vim
 export VISUAL=vim
+export BROWSER="firefox"
+export PATH=$PATH:~/Scripts

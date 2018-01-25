@@ -45,9 +45,10 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 
 
 #Set Wallpaper
-exec --no-startup-id nitrogen --restore
+#exec --no-startup-id nitrogen --restore
 #For Random Wallpaper from folder, use:
 #exec --no-startup-id feh --randomize --bg-fill ~/Pictures/Wallpapers.*
+exec --no-startup-id $HOME/Scripts/wallpaperSwitch
 
 #Enable Gaps
 for_window [class="^.*"] border pixel 2
@@ -66,7 +67,7 @@ bindsym $mod+Return exec urxvt
 bindsym $mod+Shift+q kill
 
 # start rofi (a program launcher)
-bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 450 -opacity "90" -bw 0 -bc "$rofi-color" -bg "$rofi-color" -fg "$text-color" -hlbg "$rofi-color" -hlfg "#9575cd" -font "monaco 18"
+bindsym $mod+d exec rofi -show drun -modi drun -lines 3 -eh 2 -width 100 -padding 450 -opacity "90" -bw 0 -bc "$rofi-color" -bg "$rofi-color" -fg "$text-color" -hlbg "$rofi-color" -hlfg "#9575cd" -font "monaco 18"
 
 
 exec compton --config ~/.config/compton/compton.conf
@@ -253,14 +254,22 @@ bindsym $mod+Ctrl+space exec playerctl play-pause
 bindsym $mod+Ctrl+Right exec playerctl next
 bindsym $mod+Ctrl+Left exec playerctl previous
 
+
 #Shortcuts to launch Programs
 bindsym $mod+Ctrl+e exec urxvt -depth -0 -e ranger
 #Launch Programs on startup
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-#exec $HOME/Scripts/ProgramLaunchers/telegram.sh
 exec --no-startup-id telegram
 exec --no-startup-id spotify
 exec --no-startup-id exec nm-applet
 exec --no-startup-id $HOME/Scripts/Monitors.sh
 exec --no-startup-id dropbox start
 exec --no-startup-id $HOME/.pia_manager/pia_manager/run.sh
+
+#Scratchpad stuff
+for_window [instance="__scratchpad"] floating enable
+for_window [instance="__scratchpad"] resize set 625 400
+#for_window [instance="__scratchpad"] move position center
+for_window [instance="__scratchpad"] move scratchpad
+exec --no-startup-id urxvt -name __scratchpad
+bindsym $mod+t scratchpad show

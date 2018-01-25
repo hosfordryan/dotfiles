@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#Script that picks a random picture in wallpaper folder, copies it to .config as wallpaper.jpg, and sets the colorscheme/wallpaper with wal
+
+DIR="$HOME/Pictures/Wallpapers"
+
+cd $DIR
+FILE="$(ls | shuf -n1)"
+echo "Picked random image $FILE. Copying to .config..."
+cp $FILE $HOME/.config/wallpaper/$FILE
+echo "Copied."
+wal -a 90 -i $HOME/.config/wallpaper/$FILE
+echo "Done."

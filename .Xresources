@@ -85,10 +85,6 @@ URxvt*borderColor:  [95]#1D1C25
 *color66:  #1D1C25
 
 ! Rofi colors.
-rofi.color-window: #1D1C25, #923D3D, #923D3D
-rofi.color-normal: #1D1C25, #807A86, #1D1C25, #923D3D, #1D1C25
-rofi.color-active: #1D1C25, #807A86, #1D1C25, #923D3D, #1D1C25
-rofi.color-urgent: #1D1C25, #605F67, #1D1C25, #605F67, #807A86
 
 ! Set depth to make transparency work.
 URxvt*depth: 32

@@ -10,4 +10,9 @@ echo "Picked random image $FILE. Copying to .config..."
 cp $FILE $HOME/.config/wallpaper/$FILE
 echo "Copied."
 wal -a 90 -i $HOME/.config/wallpaper/$FILE
+#Now to change led strip color
+COLOR="$(sed '6q;d' $HOME/.cache/wal/colors)"
+echo "Color chosen :$COLOR. Sending to serial..."
+sleep .2
+echo -ne $COLOR > /dev/ttyACM0
 echo "Done."

@@ -248,11 +248,11 @@ bindsym Ctrl+Mod1+l exec /home/hosfordryan/Scripts/lock.sh
 bindsym $mod+Ctrl+Up exec --no-startup-id amixer -q sset Master 3%+ #increase sound volume
 bindsym $mod+Ctrl+Down exec --no-startup-id amixer -q sset Master 3%- #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+bindsym $mod+Ctrl+Left exec /home/hosfordryan/Scripts/Headphones.sh #Switch to Headphones
+bindsym $mod+Ctrl+Right exec /home/hosfordryan/Scripts/Speakers.sh # Swtich to Speakers
 
 # Media player controls
 bindsym $mod+Ctrl+space exec playerctl play-pause
-bindsym $mod+Ctrl+Right exec playerctl next
-bindsym $mod+Ctrl+Left exec playerctl previous
 
 
 #Shortcuts to launch Programs
